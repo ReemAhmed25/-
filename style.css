@@ -1,0 +1,161 @@
+@font-face {
+    font-family: carryu;
+    src: url(fonts/LucySaidOkPersonalUseItalic-OV9ee.ttf);
+}
+@font-face {
+    font-family: russian;
+    src: url(fonts/ofont.ru_Czizh.ttf);
+}
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 750px;
+    background-image: url(images/headerbc.jpg);
+    background-size: 100%;
+    display: grid;
+    grid-template: 20% 40% 30% 10% / 25% 50% 25%;
+    font-family: carryu;
+}
+main{
+    width: 100%;
+    background-image: url(images/main\ bcg.jpg);
+    background-size: 100%;
+}
+header>p{
+    grid-area:2 /2/ 3 / 3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    margin-bottom: 0;
+    text-shadow: -4px -1px 6px rgba(255,122,214,1);
+}
+#audio{
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#audio>audio{
+    width: 450px;
+    -webkit-box-shadow: -20px -1px 17px 13px rgba(255, 122, 214, 0.2);
+    -moz-box-shadow: -20px -1px 17px 13px rgba(255, 122, 214, 0.2);
+    box-shadow: -20px -1px 17px 13px rgba(255, 122, 214, 0.2);
+    border-radius: 30px;
+}
+.vlad , .allesa , .igor , .artyom , .denise , .kuzyur , .leen , .me , .anton{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+}
+.vlad>img , .allesa>img , .igor>video , .denise>img , .artyom>video , .kuzyur>img , .leen>img , .me>img , .anton>img{
+    width: 300px;
+    height: 400px;
+    -webkit-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+    -moz-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+    box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+    border-radius: 30px;
+}
+.vlad>p , .allesa>p , .igor>p, .denise>p , .artyom>p , .kuzyur>p , .leen>p , .me>p , .anton>p{
+    width: 400px;
+    height: 400px;
+    -webkit-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+    -moz-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+    box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+    border-radius: 30px;
+    font-family: russian;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+}
+
+@media(max-width:400px){
+    header{
+        width: 100%;
+        height: 200px;
+        background-image: url(images/headerbc.jpg);
+        background-size: 100%;
+        display: grid;
+        grid-template: 20% 40% 30% 10% / 20% 60% 20%;
+        font-family: carryu;
+    }
+    header>p{
+        font-size: 22px;
+    }
+    #audio>audio{
+        width: 100px;
+        height: 20px;
+        -webkit-box-shadow: -20px -1px 17px 13px rgba(255, 122, 214, 0.2);
+        -moz-box-shadow: -20px -1px 17px 13px rgba(255, 122, 214, 0.2);
+        box-shadow: -20px -1px 17px 13px rgba(255, 122, 214, 0.2);
+        border-radius: 30px;
+    }
+    .vlad , .allesa , .igor , .artyom , .denise , .kuzyur , .leen , .me , .anton{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .vlad>img , .allesa>img , .igor>video , .denise>img , .artyom>video , .kuzyur>img , .leen>img , .me>img , .anton>img{
+        width: 220px;
+        height: 300px;
+        -webkit-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        -moz-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        border-radius: 30px;
+    }
+    .vlad>p , .allesa>p , .igor>p, .denise>p , .kuzyur>p , .leen>p, .anton>p{
+        width: 220px;
+        height: 300px;
+        -webkit-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        -moz-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        border-radius: 30px;
+        font-family: russian;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        padding: 2px;
+    }
+    .artyom>p{
+        width: 220px;
+        height: 350px;
+        -webkit-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        -moz-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        border-radius: 30px;
+        font-family: russian;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        padding: 2px;
+    }
+    .me>p {
+        width: 220px;
+        height: 500px;
+        -webkit-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        -moz-box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        box-shadow: 0px 0px 19px 18px rgba(255, 122, 214, 0.2);
+        border-radius: 30px;
+        font-family: russian;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        padding: 2px;
+    }
+}
